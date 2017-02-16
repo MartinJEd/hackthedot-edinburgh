@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 768M
+  instances: 1
+  domain: mybluemix.net
+  name: hackthedot-edinburgh
+  host: hackthedot-edinburgh
+  disk_quota: 1024M
+  services:
+  - hackthedot-edinburgh-cloudantNoSQLDB
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: hackthedot-edinburgh
+    NODE_RED_PASSWORD: Winners2017!
